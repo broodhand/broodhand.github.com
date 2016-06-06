@@ -1,38 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Grandet by broodhand</title>
+    <meta name="description" content="Grandet : Grandet is a set of the python project for QUANTS.">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Grandet</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Grandet</h1>
-        <p>Grandet是北京正民惠浩投资管理有限公司旗下开源数据收集项目</p>
 
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/broodhand">View on GitHub</a>
 
-        <p class="view"><a href="https://github.com/broodhand">View My GitHub Profile</a></p>
+          <h1 id="project_title">Grandet</h1>
+          <h2 id="project_tagline">Grandet is a set of the python project for QUANTS.</h2>
 
-      </header>
-      <section>
-        <h1>
-<a id="broodhandgithubcom" class="anchor" href="#broodhandgithubcom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>broodhand.github.com</h1>
+        </header>
+    </div>
 
-<p>My Blog</p>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="grandet是什么" class="anchor" href="#grandet%E6%98%AF%E4%BB%80%E4%B9%88" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grandet是什么？</h2>
+
+<p>Grandet是一组面向QUANTS的Python工具库</p>
+
+<h2>
+<a id="grandet的历史" class="anchor" href="#grandet%E7%9A%84%E5%8E%86%E5%8F%B2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grandet的历史</h2>
+
+<ul>
+<li>Grandet前身是由北京正民惠浩投资管理有限公司面向内部开发的量化投资工具库</li>
+<li>由2016年6月6日起，公司开发团队决定将其陆续开源，定名Grandet</li>
+<li>公司开发团队将积极地开发和维护它</li>
+</ul>
+
+<h2>
+<a id="grandet库工具简介" class="anchor" href="#grandet%E5%BA%93%E5%B7%A5%E5%85%B7%E7%AE%80%E4%BB%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grandet库工具简介</h2>
+
+<p>Grandet由一系列工具组成，旨在提高QUANTS的工作效率</p>
+
+<h5>
+<a id="基础工具" class="anchor" href="#%E5%9F%BA%E7%A1%80%E5%B7%A5%E5%85%B7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基础工具：</h5>
+
+<ul>
+<li>Grandet_base: 由交易日数据api、有效证券代码api等一系列基础api</li>
+</ul>
+
+<h5>
+<a id="tick数据工具" class="anchor" href="#tick%E6%95%B0%E6%8D%AE%E5%B7%A5%E5%85%B7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>tick数据工具：</h5>
+
+<ul>
+<li>Grandet_tickORM: 高频tick数据ORM，将证券高频tick数据映射为class</li>
+<li>Grandet_DB： tick数据库接口及回调函数，
+可将tick数据固化在elasticsearch、mysql、redis等数据库中</li>
+<li>Grandet_tickToBar： 基于tick数据生成bar数据</li>
+<li>Grandet_barToTick： 基于bar数据模拟tick数据</li>
+</ul>
+
+<h5>
+<a id="回测及模拟工具" class="anchor" href="#%E5%9B%9E%E6%B5%8B%E5%8F%8A%E6%A8%A1%E6%8B%9F%E5%B7%A5%E5%85%B7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>回测及模拟工具：</h5>
+
+<ul>
+<li>Grandet_algoTrade: 基于tick数据的策略回测及模拟分析</li>
+</ul>
+
+<h5>
+<a id="基差交易工具" class="anchor" href="#%E5%9F%BA%E5%B7%AE%E4%BA%A4%E6%98%93%E5%B7%A5%E5%85%B7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基差交易工具：</h5>
+
+<ul>
+<li>Grandet_basisCalcu: 基于tick数据，实时计算basket基差，并将其映射为class</li>
+<li>Grandet_basisPDF: 基于连续tick数据生成basket基差概率密度曲线，
+同时可分层叠加不同分布概率密度函数曲线</li>
+<li>Grandet_basisTrade: 基于不同分布概率密度函数（PDF）模型，实时生成基差交易模型风险数据</li>
+</ul>
+
+<h5>
+<a id="基于久期的债券交易工具" class="anchor" href="#%E5%9F%BA%E4%BA%8E%E4%B9%85%E6%9C%9F%E7%9A%84%E5%80%BA%E5%88%B8%E4%BA%A4%E6%98%93%E5%B7%A5%E5%85%B7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基于久期的债券交易工具：</h5>
+
+<ul>
+<li>Grandet_durationCalcu: 基于tick数据生成债券连续久期（duration）数据</li>
+<li>Grandet_durationCurve: 基于连续久期（duration）数据生成久期曲线，并作回归分析和曲线拟合</li>
+<li>Grandet_durationTrade: 实时扫描市场偏离拟合久期曲线的交易或报价</li>
+</ul>
+
+<p>陆续还将开源可转债、分级基金、期权等工具</p>
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
     
+
   </body>
 </html>
