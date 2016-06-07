@@ -1,7 +1,7 @@
 {
-  "name": "opensourceproject",
-  "tagline": "Beijing SPBG Capital CO.,Ltd. Open source project community",
-  "body": "# 北京正民惠浩投资管理有限公司\r\n# Beijing SPBG Capital Co.,Ltd.\r\n## 公司简介\r\n## Company Profile\r\n* SPBG Capital 是由QUANTS团队创建的松散型量化策略研发公司\r\n* SPBG Capital is a quantitative investment strategy R&D Company which created by QUANTS.\r\n* 公司旨在成为QUANTS的交流，服务平台\r\n* We want to be a service platform for QUANTS.\r\n\r\n## 项目社区平台简介\r\n## Project Community Profile \r\n* 目的：以技会友，切磋交流，共同进步\r\n* Purpose：Make progress and grow up together\r\n* 战略：公司核心研发团队将努力实现内部非核心代码开源化\r\n* Strategy: Open Source for QUANTS\r\n* 使命：社区平台将承载这些项目的开源及后续研发维护\r\n* Goal: Open Source Project R&B\r\n\r\n## 项目列表\r\n## Project List\r\n* [Grandet 葛朗台](spbgcapital.net/Grandet)---一组量化投资的python工具库 \r\n* [Grandet](spbgcapital.net/Grandet) --- a set of python tools for QUANTS\r\n\r\n",
+  "name": "开源项目社区",
+  "tagline": "Open source project community",
+  "body": "# 北京正民惠浩投资管理有限公司\r\n# Beijing SPBG Capital Co.,Ltd.\r\n## 公司简介\r\n## Company Profile\r\n* SPBG Capital 是由QUANTS团队创建的松散型量化策略研发公司\r\n* SPBG Capital is a quantitative investment strategy R&D Company which created by QUANTS.\r\n* 公司旨在成为QUANTS的交流，服务平台\r\n* We want to be a service platform for QUANTS.\r\n\r\n## 项目社区平台简介\r\n## Project Community Profile \r\n* 目的：以技会友，切磋交流，共同进步\r\n* Purpose：Make progress and grow up together\r\n* 战略：公司核心研发团队将努力实现内部非核心代码开源化\r\n* Strategy: Open Source for QUANTS\r\n* 使命：社区平台将承载这些项目的开源及后续研发维护\r\n* Goal: Open Source Project R&B\r\n\r\n## 项目列表\r\n## Project List\r\n* [Grandet 葛朗台](/Grandet)---一组量化投资的python工具库 \r\n* [Grandet](/Grandet) --- a set of python tools for QUANTS\r\n\r\n",
   "google": "",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
